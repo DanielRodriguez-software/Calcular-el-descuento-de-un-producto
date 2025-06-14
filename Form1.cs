@@ -66,5 +66,10 @@ namespace Calcular_el_descuento_de_un_producto
         {
 
         }
+
+        private void lblError_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

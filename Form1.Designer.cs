@@ -30,14 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.gbPrincipal = new System.Windows.Forms.GroupBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.lblOriginal = new System.Windows.Forms.Label();
-            this.lblDescuento = new System.Windows.Forms.Label();
-            this.txtOriginal = new System.Windows.Forms.TextBox();
-            this.txtDescuento = new System.Windows.Forms.TextBox();
-            this.btnDescuento = new System.Windows.Forms.Button();
-            this.btnLimpiar = new System.Windows.Forms.Button();
             this.lblError = new System.Windows.Forms.Label();
+            this.txtDescuento = new System.Windows.Forms.TextBox();
+            this.txtOriginal = new System.Windows.Forms.TextBox();
+            this.lblDescuento = new System.Windows.Forms.Label();
+            this.lblOriginal = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.btnDescuento = new System.Windows.Forms.Button();
             this.gbPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,19 +60,32 @@
             this.gbPrincipal.TabStop = false;
             this.gbPrincipal.Text = "Pantalla Principal";
             // 
-            // backgroundWorker1
+            // lblError
             // 
-            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
+            this.lblError.AutoSize = true;
+            this.lblError.ForeColor = System.Drawing.Color.Red;
+            this.lblError.Location = new System.Drawing.Point(341, 179);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(45, 19);
+            this.lblError.TabIndex = 6;
+            this.lblError.Text = "Error";
+            this.lblError.Click += new System.EventHandler(this.lblError_Click);
             // 
-            // lblOriginal
+            // txtDescuento
             // 
-            this.lblOriginal.AutoSize = true;
-            this.lblOriginal.Location = new System.Drawing.Point(39, 53);
-            this.lblOriginal.Name = "lblOriginal";
-            this.lblOriginal.Size = new System.Drawing.Size(107, 19);
-            this.lblOriginal.TabIndex = 0;
-            this.lblOriginal.Text = "Precio Original:";
-            this.lblOriginal.Click += new System.EventHandler(this.lblOriginal_Click);
+            this.txtDescuento.Location = new System.Drawing.Point(40, 174);
+            this.txtDescuento.Name = "txtDescuento";
+            this.txtDescuento.ReadOnly = true;
+            this.txtDescuento.Size = new System.Drawing.Size(100, 26);
+            this.txtDescuento.TabIndex = 3;
+            // 
+            // txtOriginal
+            // 
+            this.txtOriginal.Location = new System.Drawing.Point(40, 86);
+            this.txtOriginal.Name = "txtOriginal";
+            this.txtOriginal.Size = new System.Drawing.Size(100, 26);
+            this.txtOriginal.TabIndex = 2;
+            this.txtOriginal.TextChanged += new System.EventHandler(this.txtOriginal_TextChanged);
             // 
             // lblDescuento
             // 
@@ -84,51 +97,44 @@
             this.lblDescuento.Text = "Total a pagar es:";
             this.lblDescuento.Click += new System.EventHandler(this.lblDescuento_Click);
             // 
-            // txtOriginal
+            // lblOriginal
             // 
-            this.txtOriginal.Location = new System.Drawing.Point(40, 86);
-            this.txtOriginal.Name = "txtOriginal";
-            this.txtOriginal.Size = new System.Drawing.Size(100, 26);
-            this.txtOriginal.TabIndex = 2;
-            this.txtOriginal.TextChanged += new System.EventHandler(this.txtOriginal_TextChanged);
+            this.lblOriginal.AutoSize = true;
+            this.lblOriginal.Location = new System.Drawing.Point(39, 53);
+            this.lblOriginal.Name = "lblOriginal";
+            this.lblOriginal.Size = new System.Drawing.Size(107, 19);
+            this.lblOriginal.TabIndex = 0;
+            this.lblOriginal.Text = "Precio Original:";
+            this.lblOriginal.Click += new System.EventHandler(this.lblOriginal_Click);
             // 
-            // txtDescuento
+            // backgroundWorker1
             // 
-            this.txtDescuento.Location = new System.Drawing.Point(40, 174);
-            this.txtDescuento.Name = "txtDescuento";
-            this.txtDescuento.ReadOnly = true;
-            this.txtDescuento.Size = new System.Drawing.Size(100, 26);
-            this.txtDescuento.TabIndex = 3;
-            // 
-            // btnDescuento
-            // 
-            this.btnDescuento.Location = new System.Drawing.Point(304, 53);
-            this.btnDescuento.Name = "btnDescuento";
-            this.btnDescuento.Size = new System.Drawing.Size(144, 44);
-            this.btnDescuento.TabIndex = 4;
-            this.btnDescuento.Text = "Aplicar Descuento";
-            this.btnDescuento.UseVisualStyleBackColor = true;
-            this.btnDescuento.Click += new System.EventHandler(this.btnDescuento_Click);
+            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Location = new System.Drawing.Point(304, 127);
+            this.btnLimpiar.Image = global::Calcular_el_descuento_de_un_producto.Properties.Resources.icons8_broom_48;
+            this.btnLimpiar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLimpiar.Location = new System.Drawing.Point(312, 106);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(144, 32);
+            this.btnLimpiar.Size = new System.Drawing.Size(166, 56);
             this.btnLimpiar.TabIndex = 5;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = true;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
-            // lblError
+            // btnDescuento
             // 
-            this.lblError.AutoSize = true;
-            this.lblError.ForeColor = System.Drawing.Color.Red;
-            this.lblError.Location = new System.Drawing.Point(341, 177);
-            this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(45, 19);
-            this.lblError.TabIndex = 6;
-            this.lblError.Text = "Error";
+            this.btnDescuento.Image = global::Calcular_el_descuento_de_un_producto.Properties.Resources.icons8_add_48;
+            this.btnDescuento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDescuento.Location = new System.Drawing.Point(304, 40);
+            this.btnDescuento.Name = "btnDescuento";
+            this.btnDescuento.Size = new System.Drawing.Size(180, 57);
+            this.btnDescuento.TabIndex = 4;
+            this.btnDescuento.Text = "Aplicar Descuento";
+            this.btnDescuento.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDescuento.UseVisualStyleBackColor = true;
+            this.btnDescuento.Click += new System.EventHandler(this.btnDescuento_Click);
             // 
             // Form1
             // 
