@@ -1,0 +1,10 @@
+C:\Users\MINEDUCYT\OneDrive\Escritorio\Calcular el descuento de un producto\bin\Debug\Calcular el descuento de un producto.exe.config
+C:\Users\MINEDUCYT\OneDrive\Escritorio\Calcular el descuento de un producto\bin\Debug\Calcular el descuento de un producto.exe
+C:\Users\MINEDUCYT\OneDrive\Escritorio\Calcular el descuento de un producto\bin\Debug\Calcular el descuento de un producto.pdb
+C:\Users\MINEDUCYT\OneDrive\Escritorio\Calcular el descuento de un producto\obj\Debug\Calcular el descuento de un producto.csproj.AssemblyReference.cache
+C:\Users\MINEDUCYT\OneDrive\Escritorio\Calcular el descuento de un producto\obj\Debug\Calcular_el_descuento_de_un_producto.Form1.resources
+C:\Users\MINEDUCYT\OneDrive\Escritorio\Calcular el descuento de un producto\obj\Debug\Calcular_el_descuento_de_un_producto.Properties.Resources.resources
+C:\Users\MINEDUCYT\OneDrive\Escritorio\Calcular el descuento de un producto\obj\Debug\Calcular el descuento de un producto.csproj.GenerateResource.cache
+C:\Users\MINEDUCYT\OneDrive\Escritorio\Calcular el descuento de un producto\obj\Debug\Calcular el descuento de un producto.csproj.CoreCompileInputs.cache
+C:\Users\MINEDUCYT\OneDrive\Escritorio\Calcular el descuento de un producto\obj\Debug\Calcular el descuento de un producto.exe
+C:\Users\MINEDUCYT\OneDrive\Escritorio\Calcular el descuento de un producto\obj\Debug\Calcular el descuento de un producto.pdb
